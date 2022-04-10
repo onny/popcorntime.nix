@@ -3559,12 +3559,12 @@ let
         sha512 = "87E1I+2Wg4dxxz4rcxElo3dxO/w1ZtgL1yA0Sb6vH3qU16vRKq1NjWQv9SCY3ly2OQROcoxHZOUpmelS+k6wOw==";
       };
     };
-    "http-node-git://github.com/feross/http-node#webtorrent" = {
+    "http-node-git://github.com/webtorrent/http-node#webtorrent" = {
       name = "http-node";
       packageName = "http-node";
       version = "1.2.0";
       src = fetchgit {
-        url = "git://github.com/feross/http-node";
+        url = "https://github.com/webtorrent/http-node";
         rev = "342ef8624495343ffd050bd0808b3750cf0e3974";
         sha256 = "d7408d01b05fcbd5bb4fb44fd3d7d71463bafd5124d7e69c6f3e97cef8c65368";
       };
@@ -8200,7 +8200,7 @@ let
       packageName = "temp";
       version = "0.8.3";
       src = fetchgit {
-        url = "git://github.com/adam-lynch/node-temp";
+        url = "https://github.com/adam-lynch/node-temp";
         rev = "279c1350cb7e4f02515d91da9e35d39a40774016";
         sha256 = "f8b7d1266ffd295e49781b9c3e7cbe528e5cab6757e61eca315bdc6d6afa2f77";
       };
@@ -10093,7 +10093,7 @@ let
         ];
       })
       sources."http-headers-3.0.2"
-      (sources."http-node-git://github.com/feross/http-node#webtorrent" // {
+      (sources."http-node-git://github.com/webtorrent/http-node#webtorrent" // {
         dependencies = [
           sources."http-parser-js-0.4.13"
         ];
